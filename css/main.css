@@ -1,0 +1,215 @@
+/* BE SURE TO VIEW IN FULL MODE FOR THE FULL EFFECT */
+
+body {
+	height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+* {
+	color: #636c72;
+}
+body > div.container-fluid {
+  transition: 0.5s ease;
+}
+a {
+	color: #636c72;
+}
+a:hover {
+	color: #222222;
+}
+.font-weight-200 {
+	font-weight: 200;
+}
+.bg-blue {
+	background-color: #00b5c5; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #4774e5 0%, #2072ca 0%, #8669d3 0%, #00acc6 73%, #2bcfc9 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #4774e5 0%,#2072ca 0%,#8669d3 0%,#00acc6 73%,#2bcfc9 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #4774e5 0%,#2072ca 0%,#8669d3 0%,#00acc6 73%,#2bcfc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4774e5', endColorstr='#2bcfc9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.bg-white {
+	background-color: #FFF;
+}
+.h-15 {
+	height: 15vh;
+}
+.btn-red {
+	background-color: #ff9393;
+	border-radius: 0;
+	color: #FFF;
+}
+#signup {
+	border-radius: 5%;
+}
+.h-100vh {
+	height: 100vh;
+}
+.w-100vw {
+	width: 100vw;
+}
+.w-400vw {
+	width: 400vw;
+}
+.flip-container {
+	perspective: 1000px;
+}
+.flip-container:hover .flipper {
+		transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+	width: 20vw; max-width: 200px;
+	height: 20vw; max-height: 200px;
+}
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: #FFF;
+}
+.back {
+	transform: rotateY(180deg);
+	background-color: #222222;
+}
+.align-bottom {
+	position: absolute;
+	bottom: 0;
+}
+.align-top {
+	position: absolute;
+	top: 0;
+}
+footer * {
+  font-size: 2vh;
+}
+.form-control {
+	color: #bbbbbb!important;
+}
+.spacer {
+	height: 5vh;
+}
+.ls-2 {
+	line-height: 2em;
+}
+#heroImg {
+	position: absolute;
+	top: 0; left: 0;
+	height: 100%; width: 100%;
+	background-image: url("https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg");
+	background-size: 180%;
+	mix-blend-mode: lighten;
+/* 	background-position: 46.6% 55%; */
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  filter: flipH;
+	opacity: 1;
+}
+#bgElements {
+	position: absolute;
+	top: 0; left: 0;
+}
+.p-absolute {
+	position: absolute;
+}
+#bgElements div:nth-child(1) {
+	width: 400px; height: 400px;
+	left: 0;
+	bottom: 10vh;
+	opacity: 0.4;
+	mix-blend-mode: overlay;
+}
+#bgElements div:nth-child(2) {
+	width: 250px; height: 250px;
+	left: 20vw;
+	bottom: 35vh;
+	opacity: 0.3;
+	mix-blend-mode: overlay;
+}
+#bgElements div:nth-child(3) {
+	width: 300px; height: 300px;
+	right: 5vw;
+	bottom: 30vh;
+	opacity: 0.3;
+	mix-blend-mode: screen;
+}
+#bgElements div:nth-child(4) {
+	width: 500px; height: 500px;
+	right: 25vw;
+	bottom: 35vh;
+	opacity: 0.5;
+	mix-blend-mode: overlay;
+}
+#bgElements div:nth-child(5) {
+	width: 75px; height: 75px;
+	left: 29vw;
+	bottom: 32vh;
+	opacity: 0.7;
+	mix-blend-mode: screen;
+}
+#bgElements div:nth-child(6) {
+	width: 100px; height: 100px;
+	right: 19vw;
+	bottom: 55vh;
+	opacity: 0.6;
+	mix-blend-mode: screen;
+}
+.btn-switch:hover {
+	color: #ff9393;
+	background-color: #FFF;
+  transform: scale(1.2);
+}
+#signup button {
+  transition: 0.3s ease;
+}
+#signup button:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 5px 0 #D2D6F1;
+}
+@media (max-width: 750px) {
+	.h-15 {
+		height: 10vh;
+	}
+}
+@media (min-height: 750px) {
+	footer * {
+		font-size: 1.65vh;
+	}
+}
+@media (max-width: 700px) {
+	#bgElements div:nth-child(4) {
+		width: 70vw;
+		height: 70vw;
+	}
+}
+@media (max-width: 650px) {
+	.h-15 {
+		height: 5vh;
+	}
+}
+@media (max-height: 600px) {
+	footer * {
+		font-size: 13px;
+	}
+}
+@media (max-width: 576px) {
+	#section2 p {
+		display: none;
+	}
+	.col-12 > .flip-container:first-child {
+		margin-top: 5vh;
+	}
+}
+@media (max-width: 500px) {
+	.ls-2 {
+		line-height: 3vh;
+	}
+}
